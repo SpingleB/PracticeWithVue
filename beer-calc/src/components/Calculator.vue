@@ -214,6 +214,11 @@
     border-radius: 15px;
     right: 0;
     top: 55px;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     .beer-option {
         display: flex;
@@ -376,7 +381,6 @@
     align-items: center;
     gap: 10px;
     position: absolute;
-    scrollbar-width: none;
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--color-orange-dark);
@@ -387,6 +391,7 @@
     padding: 15px 20px;
     transition: var(--fast);
     cursor: pointer;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
         display: none;
