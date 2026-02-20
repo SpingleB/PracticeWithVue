@@ -223,6 +223,7 @@
         border-radius: 15px;
         color: var(--color-grey-1);
         padding: 5px 8px;
+        cursor: pointer;
 
         .beer-option__img-div {
             height: 50px;
@@ -375,6 +376,7 @@
     align-items: center;
     gap: 10px;
     position: absolute;
+    scrollbar-width: none;
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--color-orange-dark);
@@ -385,6 +387,10 @@
     padding: 15px 20px;
     transition: var(--fast);
     cursor: pointer;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
     
     
     .currency-li {
