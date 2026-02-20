@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat-preset-1-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .montserrat-preset-1-regular {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .montserrat-preset-1-regular {
+    font-size: 2.5rem;
+  }
+}
+
+.montserrat-preset-2-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.375rem;
+}
+
+@media (min-width: 900px) {
+  .montserrat-preset-2-regular {
+    font-size: 1.75rem;
+  }
+}
+
+.montserrat-preset-3-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.875rem;
+}
+
+@media(min-width: 600px) {
+  .montserrat-preset-3-regular {
+    font-size: 2.5rem;
+  }
+}
+
+.montserrat-preset-4-semiBold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.813rem;
+}
+
+@media(min-width: 600px) {
+  .montserrat-preset-4-semiBold {
+    font-size: 3rem;
+  }
+}
+
+.montserrat-preset-5-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+@media(min-width: 600px) {
+    .montserrat-preset-5-regular {
+      font-size: 1.5em;
+    }
+}
+
+@media (min-width: 900px) {
+  .montserrat-preset-5-regular {
+      font-size: 2em;
+  }
+}

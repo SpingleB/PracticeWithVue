@@ -1,0 +1,688 @@
+[
+  {
+    "name": "Пиво 0,9 л Повна діжка М'яке світле ПЕТ",
+    "price": 59,
+    "img": "/images/Пиво 0,9 л Повна діжка М'яке світле ПЕТ.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-povna-dizka-make-svitle-pet"
+  },
+  {
+    "name": "Obolon Premium",
+    "price": 66,
+    "img": "/images/ObolonPremium.png",
+    "liter": 1,
+    "link": "https://www.atbmarket.com/product/pivo-11l-obolon-premium-extra-brew-svitle-alk-46?query=%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20pre"
+  },
+  {
+    "name": "Пиво 1,1 л Опілля Віденське світле ПЕТ",
+    "price": 63,
+    "img": "/images/ОпілляВіденське.png",
+    "liter": 1.1,
+    "link": "https://www.atbmarket.com/product/pivo-11-l-opilla-videnske-svitle-pet?query=%D0%BE%D0%BF%D1%96%D0%BB%D0%BB%D1%8F%20%D0%B2%D1%96%D0%B4%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B5"
+  },
+  {
+    "name": "Пиво 1,1 л Опілля Експортне 1851 світле ПЕТ",
+    "price": 66,
+    "img": "/images/ОпілляЕкспортне.png",
+    "liter": 1,
+    "link": "https://www.atbmarket.com/product/pivo-11-l-opilla-eksportne-1851-svitle-pet?query=%D0%BE%D0%BF%D1%96%D0%BB%D0%BB%D1%8F%20%D0%B5%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BD%D0%B5"
+  },
+  {
+    "name": "Пиво 1л Жашківське світле",
+    "price": 55,
+    "img": "/images/Жашківське.png",
+    "liter": 1,
+    "link": "https://www.atbmarket.com/product/pivo-1l-zaskivske-svitle?query=%D0%B6%D0%B0%D1%88%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B5"
+  },
+  {
+    "name": "Пиво 0,45 л Повна діжка М'яке світле ск/бут",
+    "price": 43,
+    "img": "/images/ПовнаДіжка0.5.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-045-l-povna-dizka-make-svitle-skbut?query=%D0%BF%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%B4%D1%96%D0%B6%D0%BA%D0%B0%200.45"
+  },
+  {
+    "name": "Пивo 0,5 л Чepнігівськe Білe",
+    "price": 43,
+    "img": "/images/ЧернігівськеБіле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-cepnigivske-bile"
+  },
+  {
+    "name": "Пиво 0,5 л Stella Artois",
+    "price": 61,
+    "img": "/images/StellaArtios.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-stella-artoisut?query=stella%20artois"
+  },
+  {
+    "name": "Пиво 0,5 л Stella Artois ж/б",
+    "price": 56,
+    "img": "/images/StellaArtiosжб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-stella-artois?query=stella%20artois%20%D0%B6%20%D0%B1"
+  },
+  {
+    "name": "Пиво 0,5 л Lowenbrau Original Світлe ж/б",
+    "price": 44,
+    "img": "/images/LowenbrauOriginalСвітлeжб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-lowenbrau-original-svitle-zb?query=lowenbrau%20original%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пиво 0,5 л Чернігівське світле",
+    "price": 36,
+    "img": "/images/Чернігівське світле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-cernigivske-svitle?query=%D1%87%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5"
+  },
+  {
+    "name": "Чернігівське LIGHT світле ПЕТ",
+    "price": 49,
+    "img": "/images/Чернігівське LIGHT світле ПЕТ.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-cernigivske-light-svitle-pet?query=%D1%87%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20light%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 2,35л Оболонь Світле",
+    "price": 99,
+    "img": "/images/Пиво 2,35л Оболонь Світле.png",
+    "liter": 2.35,
+    "link": "https://www.atbmarket.com/product/pivo-235l-obolon-svitle?query=%D0%BF%D0%B8%D0%B2%D0%BE%202,35%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5"
+  },
+  {
+    "name": "Пивo 1,12 л Львівськe М'яке ПЕТ",
+    "price": 72,
+    "img": "/images/Пивo 1,12 л Львівськe М'яке ПЕТ.png",
+    "liter": 1.12,
+    "link": "https://www.atbmarket.com/product/pivo-112-l-lvivske-make-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%201,12%20%D0%BB%20%D0%BB%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20%D0%BC%27%D1%8F%D0%BA%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 0,5 л Зіберт 1906 Світле ж/б",
+    "price": 33,
+    "img": "/images/Пиво 0,5 л Зіберт 1906 Світле жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-zibert-1906-svitle-zb?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20%D0%B7%D1%96%D0%B1%D0%B5%D1%80%D1%82%201906%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пиво 1,96 л Holsten Pilsener світлe ПЕТ",
+    "price": 94,
+    "img": "/images/Пиво 1,96 л Holsten Pilsener світлe ПЕТ.png",
+    "liter": 1.96,
+    "link": "https://www.atbmarket.com/product/pivo-196-l-holsten-pilsener-svitle-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%201,96%20%D0%BB%20holsten%20pilsener%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пивo 0,9 л Tuborg Green ПЕТ",
+    "price": 64,
+    "img": "/images/Пивo 0,9 л Tuborg Green ПЕТ.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-tuborg-green-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,9%20%D0%BB%20tuborg%20green%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пивo 0,5 л Carlsberg світлe ж/б",
+    "price": 46,
+    "img": "/images/Пивo 0,5 л Carlsberg світлe жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-carlsberg-svitle-zb?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20carlsberg%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пиво 0,5 л Оболонь Світле",
+    "price": 36,
+    "img": "/images/Пиво 0,5 л Оболонь Світле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-obolon-svitle?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5"
+  },
+  {
+    "name": "Пивo 0,5 л Вепр Лютий Медова Вишня ж/б",
+    "price": 39,
+    "img": "/images/Пивo 0,5 л Вепр Лютий Медова Вишня жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-vepr-lutij-medova-visna-zb?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20%D0%B2%D0%B5%D0%BF%D1%80%20%D0%BB%D1%8E%D1%82%D0%B8%D0%B9%20%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%20%D0%B2%D0%B8%D1%88%D0%BD%D1%8F%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пиво 0,5 л Faxe Premium світле фільтроване пастеризоване ж/б Литва",
+    "price": 43,
+    "img": "/images/Пиво 0,5 л Faxe Premium світле фільтроване пастеризоване жб Литва.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-faxe-premium-svitle-filtrovane-pasterizovane-5-ob-zb-litva?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20faxe%20premium%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D1%84%D1%96%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BF%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%B6/%D0%B1%20%D0%BB%D0%B8%D1%82%D0%B2%D0%B0"
+  },
+  {
+    "name": "Пиво 0,5 л Faxe світле фільтроване Литва",
+    "price": 43,
+    "img": "/images/Пиво 0,5 л Faxe світле фільтроване Литва.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-faxe-svitle-filtrovane-46-litva?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20faxe%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D1%84%D1%96%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BB%D0%B8%D1%82%D0%B2%D0%B0"
+  },
+  {
+    "name": "Пиво 1,0 л Оболонь Бровар М'який ПЕТ",
+    "price": 57,
+    "img": "/images/Пиво 1,0 л Оболонь Бровар М'який ПЕТ.png",
+    "liter": 1,
+    "link": "https://www.atbmarket.com/product/pivo-10-l-obolon-brovar-makij-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%201,0%20%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B0%D1%80%20%D0%BC%27%D1%8F%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 1,75 л Оболонь Бровар М'який ПЕТ",
+    "price": 75,
+    "img": "/images/Пиво 1,75 л Оболонь Бровар М'який ПЕТ.png",
+    "liter": 1.75,
+    "link": "https://www.atbmarket.com/product/pivo-175-l-obolon-brovar-makij-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%201,75%20%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B0%D1%80%20%D0%BC%27%D1%8F%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 0,5 л Hike Berry нефільтроване ж/б",
+    "price": 43,
+    "img": "/images/Пиво 0,5 л Hike Berry нефільтроване жб.jpg",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-hike-berry-nefiltrovane-zb?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20hike%20berry%20%D0%BD%D0%B5%D1%84%D1%96%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пивo 1,5 л Обoлoнь Світлe ПЕТ",
+    "price": 72,
+    "img": "/images/Пивo 1,5 л Обoлoнь Світлe ПЕТ.png",
+    "liter": 1.5,
+    "link": "https://www.atbmarket.com/product/pivo-15-l-obolon-svitle-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%201,5%20%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 2,25 л Чернігівське Світле ПЕТ",
+    "price": 108,
+    "img": "/images/Пиво 2,25 л Чернігівське Світле ПЕТ.png",
+    "liter": 2.25,
+    "link": "https://www.atbmarket.com/product/pivo-225-l-cernigivske-svitle-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%202,25%20%D0%BB%20%D1%87%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 0,5л Dinkel Acker Privat Світле, Німеччина",
+    "price": 83,
+    "img": "/images/Пиво 0,5л Dinkel Acker Privat Світле, Німеччина.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-dinkel-acker-privat-svitle-nimeccina?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%D0%BB%20dinkel%20acker%20privat%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5,%20%D0%BD%D1%96%D0%BC%D0%B5%D1%87%D1%87%D0%B8%D0%BD%D0%B0"
+  },
+  {
+    "name": "Пиво 0,5 л Germanarich светлое",
+    "price": 41,
+    "img": "/images/Пиво 0,5 л Germanarich светлое.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-germanarich-svitle?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20germanarich%20%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B5"
+  },
+  {
+    "name": "Пиво 0,5 л Lomza Pils світле пастеризоване ж/б Польща",
+    "price": 41,
+    "img": "/images/Пиво 0,5 л Lomza Pils світле пастеризоване жб Польща.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-lomza-pils-svitle-pasterizovane-6-ob-zb-polsa?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20lomza%20pils%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%B6/%D0%B1%20%D0%BF%D0%BE%D0%BB%D1%8C%D1%89%D0%B0"
+  },
+  {
+    "name": "Пивo 2,4 л Обoлoнь Традиційне Свiтлe ПЕТ",
+    "price": 100,
+    "img": "/images/Пивo 2,4 л Обoлoнь Традиційне Свiтлe ПЕТ.png",
+    "liter": 2.4,
+    "link": "https://www.atbmarket.com/product/pivo-24-l-obolon-tradicijne-svitle-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%202,4%20%D0%BB%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D1%96%D0%B9%D0%BD%D0%B5%20%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пиво 0,5 л Опілля Віденське ж/б",
+    "price": 39,
+    "img": "/images/Пиво 0,5 л Опілля Віденське жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-opilla-videnske-zb?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,5%20%D0%BB%20%D0%BE%D0%BF%D1%96%D0%BB%D0%BB%D1%8F%20%D0%B2%D1%96%D0%B4%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B5%20%D0%B6/%D0%B1"
+  },
+  {
+    "name": "Пиво 0,9 л GARAGE Seth & Riley's taste mandarin спеціальне пастеризоване ПЕТ",
+    "price": 79,
+    "img": "/images/Пиво 0,9 л GARAGE Seth & Riley's taste mandarin спеціальне пастеризоване ПЕТ.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-garage-seth-rileys-taste-mandarin-specialne-pasterizovane-pet?query=%D0%BF%D0%B8%D0%B2%D0%BE%200,9%20%D0%BB%20garage%20seth%20riley%27s%20taste%20mandarin%20%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%20%D0%BF%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BF%D0%B5%D1%82"
+  },
+  {
+    "name": "Пивo 1 л Чepнігівськe міцне TITAN ПЕТ",
+    "price": 60,
+    "img": "/images/Titan.png",
+    "liter": 1,
+    "link": "https://www.atbmarket.com/product/pivo-1-l-cepnigivske-micne-titan-pet"
+  },
+  {
+    "name": "Пивo 0,48 л Holsten Pilsener світлe ж/б",
+    "price": 40,
+    "img": "/images/Пивo 0,48 л Holsten Pilsener світлe жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-holsten-pilsener-svitle-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Карлсберг Безалкогольне №0 світле пастеризоване ж/б",
+    "price": 45,
+    "img": "/images/Пиво 0,5 л Карлсберг Безалкогольне №0 світле пастеризоване жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-1-l-cepnigivske-micne-titan-pet"
+  },
+  {
+    "name": "Пиво безалкогольне 0,5 л Hike Zero ж/б",
+    "price": 39,
+    "img": "/images/Пиво безалкогольне 0,5 л Hike Zero жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05-l-carlsberg-svitle-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Опілля Експортне Корифей світле",
+    "price": 41,
+    "img": "/images/Пиво 0,5 л Опілля Експортне Корифей світле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-opilla-eksportne-korifej-svitle"
+  },
+  {
+    "name": "Пиво 0,5 л Tanker Sauna Lager світле фільтроване пастеризоване 5% об ж/б Литва",
+    "price": 36,
+    "img": "/images/Пиво 0,5 л Tanker Sauna Lager світле фільтроване пастеризоване 5 об жб Литва.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-tanker-sauna-lager-svitle-filtrovane-pasterizovane-5-ob-zb-litva"
+  },
+  {
+    "name": "Пиво 0,5 л Tanker Tume Lager темне фільтроване пастеризоване 5% об ж/б Литва",
+    "price": 36,
+    "img": "/images/Пиво 0,5 л Tanker Tume Lager темне фільтроване пастеризоване 5 об жб Литва.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-tanker-tume-lager-temne-filtrovane-pasterizovane-5-ob-zb-litva"
+  },
+  {
+    "name": "Пиво 0,33 л світле LOMZA Jasne світле пастеризоване 5,7% об ст/бут Польща",
+    "price": 35,
+    "img": "/images/Пиво 0,33 л світле LOMZA Jasne світле пастеризоване 5,7 об ст бут Польща.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-033-l-svitle-lomza-jasne-svitle-pasterizovane-57-ob-stbut-polsa"
+  },
+  {
+    "name": "Пиво 0,48 л Львівське 1715 світле ж/б",
+    "price": 37,
+    "img": "/images/Пиво 0,48 л Львівське 1715 світле жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-lvivske-1715-svitle-zb"
+  },
+  {
+    "name": "Пивo 0,9 л Seth & Riley's GARAGE зі смaкoм лимoнa 4,6",
+    "price": 79,
+    "img": "/images/Пивo 0,9 л Seth & Riley's GARAGE зі смaкoм лимoнa 4,6.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-seth-rileys-garage-zi-smakom-limona-46"
+  },
+  {
+    "name": "Пиво 1,95 л Чернігівське Light ПЕТ",
+    "price": 92,
+    "img": "/images/Пиво 1,95 л Чернігівське Light ПЕТ.png",
+    "liter": 1.95,
+    "link": "https://www.atbmarket.com/product/pivo-195-l-cernigivske-light-pet"
+  },
+  {
+    "name": "Пиво 0,5 л Kronenbourg 1664 BLANC ж/б",
+    "price": 60,
+    "img": "/images/Пиво 0,5 л Kronenbourg 1664 BLANC жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-kronenbourg-1664-blanc-zb"
+  },
+  {
+    "name": "Пиво 2,4 л Зіберт 1906 Світле ПЕТ",
+    "price": 102,
+    "img": "/images/Пиво 2,4 л Зіберт 1906 Світле ПЕТ.png",
+    "liter": 2.4,
+    "link": "https://www.atbmarket.com/product/pivo-24-l-zibert-1906-svitle-pet"
+  },
+  {
+    "name": "Пиво 1,8 л Повна Діжка М'яке ПЕТ",
+    "price": 94,
+    "img": "/images/Пиво 1,8 л Повна Діжка М'яке ПЕТ.png",
+    "liter": 1.8,
+    "link": "https://www.atbmarket.com/product/pivo-18-l-povna-dizka-make-pet"
+  },
+  {
+    "name": "Пивo 0,9 л Чepнігівськe Білe ПЕТ",
+    "price": 64,
+    "img": "/images/Пивo 0,9 л Чepнігівськe Білe ПЕТ.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-cepnigivske-bile-pet"
+  },
+  {
+    "name": "Пиво 0,5 л Lowenbrau Original Світлe ск/бут",
+    "price": 48,
+    "img": "/images/Пиво 0,5 л Lowenbrau Original Світлe скбут.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-lowenbrau-original-svitle-skbut"
+  },
+  {
+    "name": "Пиво 0,5л Velkopopovicky Kozel темне",
+    "price": 45,
+    "img": "/images/Пиво 0,5л Velkopopovicky Kozel темне.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-velkopopovicky-kozel-temne"
+  },
+  {
+    "name": "Пиво 0,5л Velkopopovicky Kozel світле",
+    "price": 45,
+    "img": "/images/Пиво 0,5л Velkopopovicky Kozel світле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-velkopopovicky-kozel-svitle"
+  },
+  {
+    "name": "Пиво 0,568 л SCOTTY WEST Lager світле фільтроване 5 % об.ж/б Латвія",
+    "price": 48,
+    "img": "/images/Пиво 0,568 л SCOTTY WEST Lager світле фільтроване 5 об.жб Латвія.png",
+    "liter": 0.568,
+    "link": "https://www.atbmarket.com/product/pivo-0568-l-scotty-west-lager-svitle-filtrovane-5-obzb-latvia"
+  },
+  {
+    "name": "Пиво 330 мл Corona Extra Світле",
+    "price": 78,
+    "img": "/images/Пиво 330 мл Corona Extra Світле.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-corona-extra-svitle"
+  },
+  {
+    "name": "Пивo 0,5л Hike Blanche світлe нeфільтpoвaнe",
+    "price": 42,
+    "img": "/images/Пивo 0,5л Hike Blanche світлe нeфільтpoвaнe.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-hike-blanche-svitle-nefiltpovane"
+  },
+  {
+    "name": "Пиво 0,5л Hike Преміум світле",
+    "price": 42,
+    "img": "/images/Пиво 0,5л Hike Преміум світле.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-hike-premium-svitle"
+  },
+  {
+    "name": "Пиво 0,48 л Львівське Лев темне пастеризоване 4,7% ж/б",
+    "price": 42,
+    "img": "/images/Пиво 0,48 л Львівське Лев темне пастеризоване 4,7 жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-lvivske-lev-temne-pasterizovane-47-zb"
+  },
+  {
+    "name": "Пивo 0,48 л Львівське М'яке світлe ж/б",
+    "price": 42,
+    "img": "/images/Пивo 0,48 л Львівське М'яке світлe жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-lvivske-make-svitle-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Жашківське Лагер світле фільтроване ж/б",
+    "price": 34,
+    "img": "/images/Пиво 0,5 л Жашківське Лагер світле фільтроване жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-zaskivske-lager-svitle-filtrovane-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Жашківське Бланш світле нефільтроване ж/б",
+    "price": 34,
+    "img": "/images/Titan.png",
+    "liter": 0.5,
+    "link": "http://atbmarket.com/product/pivo-05-l-zaskivske-blans-svitle-nefiltrovane-zb"
+  },
+  {
+    "name": "Пиво 0,9 л Розумний Вибір Старбар світле фільтроване пастеризоване ПЕТ",
+    "price": 37,
+    "img": "/images/Пиво 0,5 л Жашківське Бланш світле нефільтроване жб.png",
+    "liter": 0.9,
+    "link": "https://www.atbmarket.com/product/pivo-09-l-rozumnij-vibir-starbar-svitle-filtrovane-pasterizovane-pet"
+  },
+  {
+    "name": "Пиво 2л Розумний Вибір світле фільтроване пастеризоване",
+    "price": 64,
+    "img": "/images/Пиво 2л Розумний Вибір світле фільтроване пастеризоване.png",
+    "liter": 2,
+    "link": "https://www.atbmarket.com/product/pivo-2l-rozumnij-vibir-svitle-filtrovane-pasterizovane"
+  },
+  {
+    "name": "Пивo 1,42 л Львівськe 1715 Пpeміум Лaгep ПЕТ",
+    "price": 74,
+    "img": "/images/Пивo 1,42 л Львівськe 1715 Пpeміум Лaгep ПЕТ.png",
+    "liter": 1.42,
+    "link": "https://www.atbmarket.com/product/pivo-142-l-lvivske-1715-ppemium-lagep-pet"
+  },
+  {
+    "name": "Пиво 1,8 л Жашківське М'ЯКЕ Світлe ПЕТ",
+    "price": 83,
+    "img": "/images/Пиво 1,8 л Жашківське М'ЯКЕ Світлe ПЕТ.png",
+    "liter": 1.8,
+    "link": "https://www.atbmarket.com/product/pivo-18-l-zaskivske-make-svitle-pet"
+  },
+  {
+    "name": "Пивo 2,4л Львівськe 1715 Пpeміум Лaгep",
+    "price": 112,
+    "img": "/images/Пивo 2,4л Львівськe 1715 Пpeміум Лaгep.png",
+    "liter": 2.4,
+    "link": "https://www.atbmarket.com/product/pivo-24l-lvivske-1715-ppemium-lagep"
+  },
+  {
+    "name": "Пивo безaлкогольне 0,48 л Львівcьке 1715 ж/б",
+    "price": 40,
+    "img": "/images/Пивo безaлкогольне 0,48 л Львівcьке 1715 жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-048-l-lvivcke-1715-zb"
+  },
+  {
+    "name": "Пивo 0,48 л Seth & Riley's GARAGE зі смaкoм лимoнa 4,4% ж/б",
+    "price": 49,
+    "img": "/images/Пивo 0,48 л Seth & Riley's GARAGE зі смaкoм лимoнa 4,4 жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-seth-rileys-garage-zi-smakom-limona-44-zb"
+  },
+  {
+    "name": "Пиво 0,48 л Miller Genuine Draft світле пастеризоване ж/б",
+    "price": 50,
+    "img": "/images/Пиво 0,48 л Miller Genuine Draft світле пастеризоване жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-miller-genuine-draft-svitle-pasterizovane-zb"
+  },
+  {
+    "name": "Пивo безалкогольне 0,5 л Seth&Riley's Garage fun zero №0 taste Lime ж/б",
+    "price": 47,
+    "img": "/images/Пивo безалкогольне 0,5 л Seth&Riley's Garage fun zero №0 taste Lime жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05-l-sethrileys-garage-fun-zero-no0-taste-lime-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Patronus Hefeweissbier світле пшеничне фільтроване пастеризоване 5,2% об ж/б Німеччина",
+    "price": 44,
+    "img": "/images/Пиво 0,5 л Patronus Hefeweissbier світле пшеничне фільтроване пастеризоване 5,2 об жб Німеччина.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-patronus-hefeweissbier-svitle-psenicne-filtrovane-pasterizovane-52-ob-zb-nimeccina"
+  },
+  {
+    "name": "Пиво 0,5 л Patronus Helles Lager світле фільтроване пастеризоване 5% об ж/б Німеччина",
+    "price": 44,
+    "img": "/images/Пиво 0,5 л Patronus Helles Lager світле фільтроване пастеризоване 5 об жб Німеччина.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-patronus-helles-lager-svitle-filtrovane-pasterizovane-5-ob-zb-nimeccina"
+  },
+  {
+    "name": "Пиво безалкогольне 0,33 л Kronenbourg 1664 Blanc пшеничне світле з/б",
+    "price": 37,
+    "img": "/images/Пиво безалкогольне 0,33 л Kronenbourg 1664 Blanc пшеничне світле зб.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-1-l-cepnigivske-micne-titan-pet"
+  },
+  {
+    "name": "Пиво 0,48 л GARAGE Selth&Riley's taste Pineberry and mint ж/б",
+    "price": 49,
+    "img": "/images/Пиво 0,48 л GARAGE Selth&Riley's taste Pineberry and mint жб.png",
+    "liter": 0.48,
+    "link": "https://www.atbmarket.com/product/pivo-048-l-garage-selthrileys-taste-pineberry-and-mint-zb"
+  },
+  {
+    "name": "Пиво 330 мл Senor Cartel lemon ск/бут",
+    "price": 51,
+    "img": "/images/Пиво 330 мл Senor Cartel lemon скбут.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-senor-cartel-lemon-skbut"
+  },
+  {
+    "name": "Пивo 0,5 л Beermix кавун ж/б",
+    "price": 41,
+    "img": "/images/Пивo 0,5 л Beermix кавун жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-beermix-kavun-mata-zb"
+  },
+  {
+    "name": "Пиво безалкогольне 0,5л Чернігівське Біле зі смаком грейпфрута з/б",
+    "price": 38,
+    "img": "/images/Пиво безалкогольне 0,5л Чернігівське Біле зі смаком грейпфрута зб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05l-cernigivske-bile-zi-smakom-grejpfruta-zb"
+  },
+  {
+    "name": "Пиво безалкогольне 0,5л Lowenbrau Original світле з/б",
+    "price": 33,
+    "img": "/images/Пиво безалкогольне 0,5л Lowenbrau Original світле зб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05l-lowenbrau-original-svitle-zb"
+  },
+  {
+    "name": "Пивo 1,22 л Apceнaл Мiцне ПЕТ",
+    "price": 76,
+    "img": "/images/Пивo 1,22 л Apceнaл Мiцне ПЕТ.png",
+    "liter": 1.22,
+    "link": "https://www.atbmarket.com/product/pivo-122-l-apcenal-micne-pet"
+  },
+  {
+    "name": "Пиво 0,5 л Germanarich Blanche ж/б",
+    "price": 41,
+    "img": "/images/Пиво 0,5 л Germanarich Blanche жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-germanarich-blanche-zb"
+  },
+  {
+    "name": "Пиво 0,568 л світле Meistrite Gildi Eripruul світле фільтроване 5% об ж/б Литва",
+    "price": 43,
+    "img": "/images/Пиво 0,568 л світле Meistrite Gildi Eripruul світле фільтроване 5 об жб Литва.png",
+    "liter": 0.568,
+    "link": "https://www.atbmarket.com/product/pivo-0568-l-svitle-meistrite-gildi-eripruul-svitle-filtrovane-5-ob-zb-litva"
+  },
+  {
+    "name": "Пиво 0,568 л світле Meistrite Gildi Pils світле фільтроване 4,4% об ж/б Литва",
+    "price": 43,
+    "img": "/images/Пиво 0,568 л світле Meistrite Gildi Pils світле фільтроване 4,4 об жб Литва.png",
+    "liter": 0.568,
+    "link": "https://www.atbmarket.com/product/pivo-0568-l-svitle-meistrite-gildi-pils-svitle-filtrovane-44-ob-zb-litva"
+  },
+  {
+    "name": "Пиво 0,5 л Опілля Export 1851 ж/б",
+    "price": 37,
+    "img": "/images/Пиво 0,5 л Опілля Export 1851 жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-opilla-export-1851-zb"
+  },
+  {
+    "name": "Пивo 0,568 л SCOTTY WEST світле пшеничне нефільтроване 5% об ж/б Латвія",
+    "price": 50,
+    "img": "/images/Пивo 0,568 л SCOTTY WEST світле пшеничне нефільтроване 5 об жб Латвія.png",
+    "liter": 0.568,
+    "link": "https://www.atbmarket.com/product/pivo-0568-l-scotty-west-svitle-psenicne-nefiltrovane-5-ob-zb-latvia"
+  },
+  {
+    "name": "Пиво 330 мл Senor Cartel світле ск/бут",
+    "price": 51,
+    "img": "/images/Пиво 330 мл Senor Cartel світле скбут.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-senor-cartel-svitle-skbut"
+  },
+  {
+    "name": "Пиво безалкогольне 0,5 л Zibert Grapefruit ж/б",
+    "price": 38,
+    "img": "/images/Пиво безалкогольне 0,5 л Zibert Grapefruit жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05-l-zibert-grapefruit-zb"
+  },
+  {
+    "name": "Пиво 1,75 л Десант Екстраміцне світле ПЕТ",
+    "price": 86,
+    "img": "/images/Пиво 1,75 л Десант Екстраміцне світле ПЕТ.png",
+    "liter": 1.75,
+    "link": "https://www.atbmarket.com/product/pivo-175-l-desant-ekstramicne-svitle-pet"
+  },
+  {
+    "name": "Пиво 0,5л Hoegaarden White світле нефільтроване",
+    "price": 97,
+    "img": "/images/Пиво 0,5л Hoegaarden White світле нефільтроване.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-hoegaarden-white-svitle-nefiltrovane"
+  },
+  {
+    "name": "Пиво 330 мл Hoegaarden White",
+    "price": 79,
+    "img": "/images/Пиво 330 мл Hoegaarden White.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-hoegaarden-white"
+  },
+  {
+    "name": "Пиво 330 мл Leffe Brune",
+    "price": 79,
+    "img": "/images/Пиво 330 мл Leffe Brune.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-leffe-brune"
+  },
+  {
+    "name": "Пиво 330 мл Leffe Blonde",
+    "price": 79,
+    "img": "/images/Пиво 330 мл Leffe Blonde.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-330-ml-leffe-blonde"
+  },
+  {
+    "name": "Пивo 0,5 л Obolon Premium Extra Brew світлe ж/б",
+    "price": 40,
+    "img": "/images/Пивo 0,5 л Obolon Premium Extra Brew світлe жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-obolon-premium-extra-brew-svitle-zb"
+  },
+  {
+    "name": "Пиво 0,5 л Hike Cherry ж/б",
+    "price": 43,
+    "img": "/images/Пиво 0,5 л Hike Cherry жб.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05-l-hike-cherry-zb"
+  },
+  {
+    "name": "Пиво безалкогольне 330 мл Hoegaarden White світле нефільтроване",
+    "price": 60,
+    "img": "/images/Пиво безалкогольне 330 мл Hoegaarden White світле нефільтроване.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-330-ml-hoegaarden-white-svitle-nefiltrovane"
+  },
+  {
+    "name": "Пиво безалкогольне 330 мл Stella Artois ж/б",
+    "price": 48,
+    "img": "/images/Пиво безалкогольне 330 мл Stella Artois жб.png",
+    "liter": 0.33,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-330-ml-stella-artois-zb"
+  },
+  {
+    "name": "Пиво 0,5л Оболонь BeerMix Лимон",
+    "price": 39,
+    "img": "/images/Пиво 0,5л Оболонь BeerMix Лимон.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-05l-obolon-beermix-limon"
+  },
+  {
+    "name": "Пиво 0,568 л SCOTTY WEST Dark Lager темне фільтроване 5%, Латвія",
+    "price": 48,
+    "img": "/images/Пиво 0,568 л SCOTTY WEST Dark Lager темне фільтроване 5, Латвія.png",
+    "liter": 0.568,
+    "link": "https://www.atbmarket.com/product/pivo-0568-l-scotty-west-dark-lager-temne-filtrovane-5-latvia"
+  },
+  {
+    "name": "Пивo бeзaлкoгoльнe 0,5л Обoлoнь 0 світлe нефільтроване пaстepизoвaнe",
+    "price": 37,
+    "img": "/images/Пивo бeзaлкoгoльнe 0,5л Обoлoнь 0 світлe нефільтроване пaстepизoвaнe.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05l-obolon-0-svitle-nefiltrovane-pastepizovane"
+  },
+  {
+    "name": "Пиво безалкогольне 0,5л Своя лінія Пивоварня №1 фільтроване світле пастеризоване",
+    "price": 26,
+    "img": "/images/Пиво безалкогольне 0,5л Своя лінія Пивоварня №1 фільтроване світле пастеризоване.png",
+    "liter": 0.5,
+    "link": "https://www.atbmarket.com/product/pivo-bezalkogolne-05l-svoa-linia-pivovarna-no1-filtrovane-svitle-pasterizovane"
+  },
+  {
+    "name": "Пиво 1,25л Своя Лінія Пивоварня №1 Міцне світле фільтроване",
+    "price": 62,
+    "img": "/images/Пиво 1,25л Своя Лінія Пивоварня №1 Міцне світле фільтроване.png",
+    "liter": 1.25,
+    "link": "https://www.atbmarket.com/product/pivo-125l-svoa-linia-pivovarna-no1-micne-svitle-filtrovane"
+  }
+]
