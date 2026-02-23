@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-netural-900: #02012C;
+  --color-netural-800: #262540;
+  --color-netural-700: #302F4A;
+  --color-netural-600: #3C3B5E;
+  --color-netural-300: #ACACB7;
+  --color-netural-200: #D4D3D9;
+  --color-netural-0: #FFFFFF;
+  --color-orange-500: #FF820A;
+  --color-blue-500: #4658D9;
+  --color-blue-700: #2B1B9C;
+  --fast: 0.3s ease;
+}
+
+.dm-sans-preset-1-semiBold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 6rem;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+
+.bricolage-grotesque-preset-2-blod {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.25rem;
+  font-variation-settings: "wdth" 100;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-3-light {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-4-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-5-semiBold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-5-medium {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-6-medium {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-7-medium {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.dm-sans-preset-8-medium {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-netural-900);
+  padding: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */
