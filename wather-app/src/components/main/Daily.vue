@@ -2,7 +2,7 @@
     <section class="daily-forecast" aria-labelledby="daily-title">
         <h2 id="daily-title" class="dm-sans-preset-5-semiBold">Daily forecast</h2>
         <div class="forecast">
-            <div v-for="daily in dailyArr" :key="daily.day" class="daily">
+            <div v-for="daily in isMetric ? dailyArrMetric : dailyArrImperial " :key="daily.day" class="daily">
                 <span class="day dm-sans-preset-6-medium">{{ daily.day }}</span>
                 <img v-if="daily.code === 0 || daily.code === 1" :src="sunny" alt="Image">
                 <img v-if="daily.code === 2" :src="partyCloudy" alt="Image">
@@ -15,8 +15,8 @@
                 <img v-if="daily.code === 85 || daily.code === 86" :src="snow" alt="Image">
                 <img v-if="daily.code === 95 || daily.code === 96 || daily.code === 99" :src="storm" alt="Image">
                 <div class="temperature">
-                    <span class="temperature-max dm-sans-preset-7-medium">{{ daily.max }}°</span>
-                    <span class="temperature-min dm-sans-preset-7-medium">{{ daily.min }}°</span>
+                    <span class="temperature-max dm-sans-preset-7-medium">{{ Math.round(daily.max) }} {{isMetric ? '°C' : '°F'}}</span>
+                    <span class="temperature-min dm-sans-preset-7-medium">{{ Math.round(daily.min) }} {{isMetric ? '°C' : '°F'}}</span>
                 </div>
             </div>
         </div>
@@ -49,6 +49,8 @@ import sunny from '/images/icon-sunny.webp'
 
     interface DailyProps {
         dailyWeatherData: null | dailyWeather
+        isMetric: boolean
+        imperialDailyWeatherData: null | dailyWeather
     }
 
     interface Daily {
@@ -60,15 +62,17 @@ import sunny from '/images/icon-sunny.webp'
 
     const props = defineProps<DailyProps>()
 
-    const dailyArr = ref<Daily[]>([])
-    watch( () => props.dailyWeatherData, (newVal) => {
-        dailyArr.value = []
-        if (!newVal || !newVal.daily || !newVal.daily.time) return
+    const dailyArrMetric = ref<Daily[]>([])
+    const dailyArrImperial = ref<Daily[]>([])
 
+    watch( () => props.dailyWeatherData, (newVal) => {
+        dailyArrMetric.value = []
+        if (!newVal || !newVal.daily || !newVal.daily.time) return
+        //@ts-ignore
         newVal.daily.time.forEach( (_, index) => {
             const date = new Date(_)
             const formatted = date.toLocaleDateString('en-US', {weekday: 'short'})
-            dailyArr.value.push( {
+            dailyArrMetric.value.push( {
                 day: formatted,
                 code: newVal.daily.weathercode[index],
                 max: newVal.daily.temperature_2m_max[index],
@@ -79,6 +83,23 @@ import sunny from '/images/icon-sunny.webp'
         {immediate: true}
     )
 
+    watch( () => props.imperialDailyWeatherData, (newVal) => {
+        dailyArrImperial.value = []
+        if (!newVal || !newVal.daily || !newVal.daily.time) return
+        //@ts-ignore
+        newVal.daily.time.forEach( (_, index) => {
+            const date = new Date(_)
+            const formatted = date.toLocaleDateString('en-US', {weekday: 'short'})
+            dailyArrImperial.value.push( {
+                day: formatted,
+                code: newVal.daily.weathercode[index],
+                max: newVal.daily.temperature_2m_max[index],
+                min: newVal.daily.temperature_2m_min[index]
+            } )
+        } )
+        },
+        {immediate: true}
+    )
 </script>
 
 <style lang="scss" scoped>
@@ -141,5 +162,16 @@ import sunny from '/images/icon-sunny.webp'
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media(min-width: 600px) {
+    .daily-forecast {
+        .forecast {
+            flex-wrap: nowrap;
+            .daily {
+                flex: 1;
+            }
+        }
+    }
 }
 </style>

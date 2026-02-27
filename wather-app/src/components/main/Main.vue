@@ -1,8 +1,10 @@
 <template>
     <main class="main-sec">
-        <div class="city-deg" :style="{backgroundImage: `url(${isImgBig ? bigDegImg : smallDegImg})`}">
-            <h2 class="city dm-sans-preset-4-bold">{{ choosenCity }}</h2>
-            <span class="date dm-sans-preset-6-medium">{{formattedTime}}</span>
+        <div v-if="weatherDataCurrent" class="city-deg" :style="{backgroundImage: `url(${isImgBig ? bigDegImg : smallDegImg})`}">
+            <div class="date-div">
+                <h2 class="city dm-sans-preset-4-bold">{{ CITY }}</h2>
+                <span class="date dm-sans-preset-6-medium">{{formattedTimeImperial}}</span>
+            </div>
             <div class="deg">
                 <img v-if="weatherDataCurrent?.current.weather_code === 0 || weatherDataCurrent?.current.weather_code === 1" :src="sunny" alt="Image">
                 <img v-if="weatherDataCurrent?.current.weather_code === 2" :src="partyCloudy" alt="Image">
@@ -14,21 +16,23 @@
                 <img v-if="weatherDataCurrent?.current.weather_code === 80 || weatherDataCurrent?.current.weather_code === 82" :src="rain" alt="Image">
                 <img v-if="weatherDataCurrent?.current.weather_code === 85 || weatherDataCurrent?.current.weather_code === 86" :src="snow" alt="Image">
                 <img v-if="weatherDataCurrent?.current.weather_code === 95 || weatherDataCurrent?.current.weather_code === 96 || weatherDataCurrent?.current.weather_code === 99" :src="storm" alt="Image">
-                <span class="dm-sans-preset-1-semiBold" v-if="weatherDataCurrent">{{ Math.floor(weatherDataCurrent?.current.temperature_2m) }}{{ weatherDataCurrent?.current_units.temperature_2m }}</span>
+                <span class="dm-sans-preset-1-semiBold" v-if="weatherDataCurrent">{{ isMetric ? (metricTemp === null || metricTemp === undefined ? '-' : Math.round(metricTemp)) : (imperialTemp === null || imperialTemp === undefined ? '-' : Math.round(imperialTemp)) }}{{ isMetric ? (weatherDataCurrent?.current_units.temperature_2m) : (imperialWeatherDataCurrent?.current_units.temperature_2m) }}</span>
             </div>
         </div>
+        <div v-if="!weatherDataCurrent" class="pls-choose bricolage-grotesque-preset-2-blod" >
+        </div>
         <div class="current-indicators">
-            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Feels Like</span><span class="indicator-value dm-sans-preset-3-light">{{ weatherDataCurrent?.current.apparent_temperature ? Math.floor(weatherDataCurrent?.current.apparent_temperature) : 0}}{{ weatherDataCurrent?.current_units.apparent_temperature }}</span></div>
-            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Humidity</span><span class="indicator-value dm-sans-preset-3-light">{{ weatherDataCurrent?.current.relative_humidity_2m ? Math.floor(weatherDataCurrent?.current.relative_humidity_2m) : 0}}{{ weatherDataCurrent?.current_units.relative_humidity_2m }}</span></div>
-            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Wind</span><span class="indicator-value dm-sans-preset-3-light">{{ weatherDataCurrent?.current.wind_speed_10m ? Math.floor(weatherDataCurrent?.current.wind_speed_10m) : 0 }}{{ weatherDataCurrent?.current_units.wind_speed_10m }}</span></div>
-            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Precipitation</span><span class="indicator-value dm-sans-preset-3-light">{{ weatherDataCurrent?.current.precipitation ? Math.floor(weatherDataCurrent?.current.precipitation) : 0 }}{{ weatherDataCurrent?.current_units.precipitation }}</span></div>
+            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Feels Like</span><span class="indicator-value dm-sans-preset-3-light">{{ isMetric ?  (metricFeelslike === null || metricFeelslike === undefined ? '-' : Math.round(metricFeelslike)) :  (imperialFeelslike === null || imperialFeelslike === undefined ? '-' : Math.round(imperialFeelslike)) }} {{ isMetric ? weatherDataCurrent?.current_units.temperature_2m : imperialWeatherDataCurrent?.current_units.apparent_temperature }}</span></div>
+            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Humidity</span><span class="indicator-value dm-sans-preset-3-light">{{ isMetric ? (metricHumidity === null || metricHumidity === undefined ? '-' : Math.round(metricHumidity)) : (imperialHumidity === null || imperialHumidity === undefined ? '-' : Math.round(imperialHumidity)) }} {{ isMetric ? weatherDataCurrent?.current_units.relative_humidity_2m : imperialWeatherDataCurrent?.current_units.relative_humidity_2m}}</span></div>
+            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Wind</span><span class="indicator-value dm-sans-preset-3-light">{{ isMetric ? (metricWind === null || metricWind === undefined ? '-' : Math.round(metricWind)) : (imperialWind === null || imperialWind === undefined ? '-' : Math.round(imperialWind)) }} {{ isMetric ? weatherDataCurrent?.current_units.wind_speed_10m : imperialWeatherDataCurrent?.current_units.wind_speed_10m }}</span></div>
+            <div class="indicator"><span class="indicator-name dm-sans-preset-6-medium">Precipitation</span><span class="indicator-value dm-sans-preset-3-light">{{ isMetric ? (metricPrecipitation === null || metricPrecipitation === undefined ? '-' : Math.round(metricPrecipitation)) : (imperialPrecipitation === null || imperialPrecipitation === undefined ? '-' : Math.round(imperialPrecipitation)) }} {{ isMetric ? weatherDataCurrent?.current_units.precipitation : imperialWeatherDataCurrent?.current_units.precipitation }}</span></div>
         </div>
     </main>
 </template>
 
 <script setup lang="ts">
 
-import { ref } from 'vue';
+import { ref, watch, onMounted, onUnmounted } from 'vue';
 
 //@ts-ignore
 import smallDegImg from '/images/bg-today-small.svg'
@@ -55,21 +59,88 @@ import storm from '/images/icon-storm.webp'
 import sunny from '/images/icon-sunny.webp'
 //Images imports
 
-const isImgBig = ref<boolean>(false)
+    const viewportWidth = ref(window.innerWidth)
+    const isImgBig = ref<boolean>(viewportWidth.value > 600)
+
+    function handleResize() {
+    viewportWidth.value = window.innerWidth
+    }
+
+    onMounted(() => {
+    window.addEventListener('resize', handleResize)
+    })
+
+    onUnmounted(() => {
+    window.removeEventListener('resize', handleResize)
+    })
 
     interface MainProps {
         weatherDataCurrent: null | weatherCurrent
-        choosenCity: string
+        CITY: string
+        imperialWeatherDataCurrent: null | weatherCurrent
+        isMetric: boolean
     }
 
-    const { weatherDataCurrent, choosenCity } = defineProps<MainProps>()
-    const time = weatherDataCurrent?.current.time
-    const formattedTime = ref<null | string>(null)
-    if (time) {
-        const date = new Date(time)
-        const formatted = date.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})
-        formattedTime.value = formatted
-    }
+    const { weatherDataCurrent, CITY, imperialWeatherDataCurrent } = defineProps<MainProps>()
+    const formattedTimeMetric = ref<null | string>(null)
+    const formattedTimeImperial = ref<null | string>(null)
+    const metricTemp = ref<null | number>(null)
+    const metricWind = ref<null | number>(null)
+    const metricHumidity = ref<null | number>(null)
+    const metricFeelslike = ref<null | number>(null)
+    const metricPrecipitation = ref<null | number>(null)
+
+    const imperialTemp = ref<null | number>(null)
+    const imperialWind = ref<null | number>(null)
+    const imperialHumidity = ref<null | number>(null)
+    const imperialFeelslike = ref<null | number>(null)
+    const imperialPrecipitation = ref<null | number>(null)
+
+    watch( () => weatherDataCurrent?.current.time, (newVal) => {
+            formattedTimeMetric.value = ''
+            if(!newVal) return
+                const date = new Date(newVal)
+                const formatted = date.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})
+                formattedTimeMetric.value = formatted
+        },{immediate: true}
+    )
+
+    watch( () => imperialWeatherDataCurrent?.current.time, (newVal) => {
+            formattedTimeImperial.value = ''
+            if(!newVal) return
+                const date = new Date(newVal)
+                const formatted = date.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})
+                formattedTimeImperial.value = formatted
+        },{immediate: true}
+    )
+
+    watch( () => weatherDataCurrent?.current, (newVal) => {
+        metricWind.value = 0
+        metricHumidity.value = 0
+        metricFeelslike.value = 0
+        metricPrecipitation.value = 0
+        metricTemp.value = 0
+        if(!newVal) return
+        metricWind.value = newVal.wind_speed_10m
+        metricHumidity.value = newVal.relative_humidity_2m
+        metricFeelslike.value = newVal.apparent_temperature
+        metricPrecipitation.value = newVal.precipitation
+        metricTemp.value = newVal.temperature_2m
+    })
+
+    watch( () => imperialWeatherDataCurrent?.current, (newVal) => {
+        imperialWind.value = 0
+        imperialHumidity.value = 0
+        imperialFeelslike.value = 0
+        imperialPrecipitation.value = 0
+        imperialTemp.value = 0
+        if(!newVal) return
+        imperialWind.value = newVal.wind_speed_10m
+        imperialHumidity.value = newVal.relative_humidity_2m
+        imperialFeelslike.value = newVal.apparent_temperature
+        imperialPrecipitation.value = newVal.precipitation
+        imperialTemp.value = newVal.temperature_2m
+    })
 </script>
 
 <style lang="scss" scoped>
@@ -155,5 +226,64 @@ const isImgBig = ref<boolean>(false)
     }
 }
 
+.pls-choose {
+    width: 100%;
+    background-color: var(--color-netural-800);
+    border-radius: 16px;
+    padding: 40px 20px;
+    color: var(--color-netural-0);
+}
+
+.date-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+}
+
+@media(min-width: 600px) {
+    .city-deg {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 20px;
+
+        .date-div {
+            width: 50%;
+
+            span {
+                text-align: start;
+                width: 100%;
+            }
+
+            h2 {
+                text-align: start;
+            }
+    }
+
+    }
+    
+    .deg {
+        width: 50%;
+    }
+
+    .current-indicators {
+        flex-wrap: nowrap;
+        
+        .indicator {
+            padding: 30px 20px;
+            gap: 20px;
+        }
+    }
+}
 
 </style>

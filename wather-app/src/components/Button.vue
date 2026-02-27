@@ -1,5 +1,5 @@
 <template>
-    <button :type="buttonType" :class="className" @click="fn" > <slot /> </button>
+    <button :type="buttonType" :class="className" @click="fn" :disabled="disabled"> <slot /> </button>
 </template>
 
 <script setup lang="ts">
@@ -10,6 +10,7 @@
         className: string
         buttonType: ButtonType
         fn?: () => void
+        disabled?: boolean
     }
 
    const { className, buttonType, fn } = defineProps<ButtonProps>();

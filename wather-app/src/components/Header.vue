@@ -13,23 +13,50 @@
         </defs>
         </svg>
 
-        <Button buttonType="button" className="units-btn dm-sans-preset-8-medium" :fn="showUnits">
+        <Button buttonType="button" className=" units-btn dm-sans-preset-8-medium" :fn="showUnits">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#fff" d="M14.125 7.406c.031.407.031.813 0 1.188l1 .594a.74.74 0 0 1 .344.843c-.344 1.313-1.063 2.5-2 3.469-.25.219-.625.281-.906.125l-1-.594c-.25.188-.72.469-1.032.594v1.156a.733.733 0 0 1-.562.719A7.765 7.765 0 0 1 6 15.5c-.313-.063-.563-.406-.563-.719v-1.156a5.54 5.54 0 0 1-1.03-.594l-1 .594c-.282.156-.657.094-.907-.125-.938-.969-1.656-2.156-2-3.469a.74.74 0 0 1 .344-.844l1-.593c-.032-.156-.032-.406-.032-.594 0-.156 0-.406.032-.594l-1-.562A.74.74 0 0 1 .5 6c.344-1.313 1.063-2.5 2-3.469.25-.219.625-.281.906-.125l1 .594c.25-.188.719-.469 1.032-.594V1.25c0-.344.218-.625.562-.719a7.766 7.766 0 0 1 3.969 0c.312.063.562.406.562.719v1.156c.313.125.781.406 1.031.594l1-.594c.282-.156.657-.094.907.125.937.969 1.656 2.156 2 3.469a.74.74 0 0 1-.344.844l-1 .562Zm-1.656 2c.25-1.312.25-1.469 0-2.781l1.375-.781c-.188-.563-.688-1.375-1.063-1.813l-1.375.782c-.969-.844-1.125-.938-2.375-1.375V1.843C8.75 1.812 8.281 1.75 8 1.75c-.313 0-.781.063-1.063.094v1.593c-1.25.438-1.375.532-2.375 1.376L3.188 4.03c-.468.532-.812 1.157-1.062 1.813l1.375.781c-.25 1.313-.25 1.469 0 2.781l-1.375.781c.188.563.688 1.376 1.063 1.813l1.374-.781c.97.844 1.125.937 2.375 1.375v1.594c.282.03.75.093 1.063.093.281 0 .75-.062 1.031-.094v-1.593c1.25-.438 1.375-.531 2.375-1.375l1.375.781c.375-.438.875-1.25 1.063-1.813l-1.375-.78ZM8 5c1.625 0 3 1.375 3 3 0 1.656-1.375 3-3 3a3 3 0 0 1-3-3c0-1.625 1.344-3 3-3Zm0 4.5A1.5 1.5 0 0 0 9.5 8c0-.813-.688-1.5-1.5-1.5A1.5 1.5 0 0 0 6.5 8c0 .844.656 1.5 1.5 1.5Z"/></svg>
             Units
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" fill="none" viewBox="0 0 13 8"><path fill="#fff" d="M6.309 7.484 1.105 2.316c-.175-.14-.175-.421 0-.597l.704-.668a.405.405 0 0 1 .597 0l4.219 4.148 4.184-4.148c.175-.176.457-.176.597 0l.703.668c.176.176.176.457 0 .597L6.906 7.484a.405.405 0 0 1-.597 0Z"/></svg>
         </Button>
+        <section v-if="isUnitsShown" class="untis" aria-labelledby="title-btn">
+            <button @click="changeUnits" class="dm-sans-preset-7-medium" id="title-btn">{{ isMetric ?  'Switch to Imperial' : 'Switch to Metric'}}</button>
+            <div class="temperature">
+                <span class="dm-sans-preset-8-medium" id="temp">Temperature</span>
+                <div :class="isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">Celsius (°C) <img v-if="isMetric" :src="checkmark" alt="checkmark"></div>
+                <div :class="!isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">Fahrenheit (°F) <img v-if="!isMetric" :src="checkmark" alt="checkmark"></div>
+            </div>
+            <hr class="hor">
+            <div class="wind-speed">
+                <span class="dm-sans-preset-8-medium" id="wind">Wind Speed</span>
+                <div :class="isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">km/h <img v-if="isMetric" :src="checkmark" alt="checkmark"></div>
+                <div :class="!isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">mph <img v-if="!isMetric" :src="checkmark" alt="checkmark"></div>
+            </div>
+            <hr class="hor">
+            <div class="precipitation">
+                <span class="dm-sans-preset-8-medium" id="precipitation">Precipitation</span>
+                <div :class="isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">Millimeters (mm) <img v-if="isMetric" :src="checkmark" alt="checkmark"></div>
+                <div :class="!isMetric ? `unit dm-sans-preset-7-medium unit-active` : `unit dm-sans-preset-7-medium`">Inches (in) <img v-if="!isMetric" :src="checkmark" alt="checkmark"></div>
+            </div>
+        </section>
     </header>
 </template>
 
 <script setup lang="ts">
     import { ref } from 'vue';
     //@ts-ignore
-    import Button from './Button.vue';
+    import Button from './Button.vue'; import checkmark from '/images/icon-checkmark.svg'
 
-    let isUbitsShown = ref<boolean>(false)
+    let isUnitsShown = ref<boolean>(false)
     function showUnits () {
-        isUbitsShown.value = !isUbitsShown.value
+        isUnitsShown.value = !isUnitsShown.value
     }
+
+    interface HeaderProps {
+        changeUnits: () => void
+        isMetric: boolean
+    }
+
+    const {changeUnits} = defineProps<HeaderProps>()
 </script>
 
 <style lang="scss" scoped>
@@ -38,7 +65,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 20px 
+    gap: 20px;
+    position: relative;
 }
 
 .units-btn {
@@ -48,8 +76,116 @@
     padding: 10px;
     gap: 5px;
     background-color: var(--color-netural-800);
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--color-netural-0);
     cursor: pointer;
+    transition: var(--fast);
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:focus {
+        border: 2px solid var(--color-netural-0);
+    }
+}
+
+.untis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-netural-800);
+    border: 1px solid var(--color-netural-600);
+    border-radius: 12px;
+    padding: 10px 14px;
+    gap: 4px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 5px);
+    z-index: 10;
+    width: 200px;
+
+    .temperature, .precipitation, .wind-speed {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+
+        span {
+            margin-left: 8px;
+        }
+
+        .unit {
+            color: var(--color-netural-0);
+            padding: 10px 8px;
+            background-color: var(--color-netural-800);
+            gap: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: start;
+            border-radius: 8px;
+            width: 100%;
+            transition: var(--fast);
+            
+            &:focus {
+                border: 1px solid var(--color-netural-0);
+            }
+        }
+    }
+
+    span {
+        color: var(--color-netural-300);
+        width: 100%;
+        display: block;
+        text-align: start;
+    }
+
+}
+
+.hor {
+    background-color: var(--color-netural-600);
+    height: 1px;
+    width: 100%;
+}
+
+#title-btn {
+    color: var(--color-netural-0);
+    width: 100%;
+    text-align: start;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--color-netural-800);
+    padding: 10px 8px;
+    border-radius: 12px;
+    transition: var(--fast);
+
+    &:focus {
+        border: 1px solid var(--color-netural-0);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #title-btn:hover {
+        cursor: pointer;
+        background-color: var(--color-netural-700) !important;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    #title-btn:active {
+        cursor: pointer;
+        background-color: var(--color-netural-700) !important;
+    }
+}
+
+.unit-active {
+    background-color: var(--color-netural-700) !important;
+}
+
+.wind-speed, .precipitation {
+    margin-top: 9px;
 }
 </style>

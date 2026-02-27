@@ -100,3 +100,17 @@ export interface dailyWeather {
         temperature_2m_min: number[]
     }
 }
+
+export interface hourlyWeather {
+    hourly: {
+        time: string[]
+        temperature_2m: number[]
+        weather_code: number[]
+    }
+}
+
+export interface MapCoords {
+    lat: number
+    lng: number
+}
+
