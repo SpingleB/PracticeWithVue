@@ -127,7 +127,6 @@ import Header from './components/Header.vue'; import Search from './components/S
     }
 
     async function searchWeatherFromMap () {
-        const mapcrds = mapCoords.value
 
         if (mapCoords.value) {
             await getCityFromMap(mapCoords.value.lat, mapCoords.value.lng)
