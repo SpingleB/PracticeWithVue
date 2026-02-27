@@ -208,6 +208,7 @@ import sunny from '/images/icon-sunny.webp'
     width: 100%;
     margin-top: 30px;
     position: relative;
+    max-width: 1200px;
 }
 
 .hourly-top {
@@ -227,6 +228,7 @@ import sunny from '/images/icon-sunny.webp'
     border-radius: 8px;
     background-color: var(--color-netural-600);
     color: var(--color-netural-0);
+    cursor: pointer;
 }
 
 .days-list {
@@ -245,6 +247,7 @@ import sunny from '/images/icon-sunny.webp'
     cursor: pointer;
     right: 16px;
     top: 60px;
+    max-width: 300px;
     
 
     &__hourly-forecast {

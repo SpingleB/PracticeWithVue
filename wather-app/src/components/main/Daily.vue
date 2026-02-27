@@ -111,6 +111,7 @@ import sunny from '/images/icon-sunny.webp'
     gap: 20px;
     width: 100%;
     margin-top: 30px;
+    max-width: 1200px;
 
     .forecast {
         display: flex;
@@ -138,6 +139,7 @@ import sunny from '/images/icon-sunny.webp'
     padding: 16px 10px;
     gap: 20px;
     background-color: var(--color-netural-800);
+    
 
     .day {
         color: var(--color-netural-0);
@@ -164,7 +166,7 @@ import sunny from '/images/icon-sunny.webp'
     align-items: center;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 800px) {
     .daily-forecast {
         .forecast {
             flex-wrap: nowrap;

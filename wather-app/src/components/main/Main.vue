@@ -152,6 +152,7 @@ import sunny from '/images/icon-sunny.webp'
     width: 100%;
     margin-top: 30px;
     gap: 20px;
+    max-width: 1200px;
 }
 
 .city-deg {
@@ -184,9 +185,9 @@ import sunny from '/images/icon-sunny.webp'
 .deg {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 
     img {
         max-width: 120px;
@@ -286,4 +287,7 @@ import sunny from '/images/icon-sunny.webp'
     }
 }
 
+@media(min-width: 900px) {
+    
+}
 </style>

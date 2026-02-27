@@ -16,7 +16,7 @@
         </div>
         
         <div id="map"></div>
-        <Button :disabled="isMapBtnSearchDisabled" className="search-btn dm-sans-preset-5-medium" buttonType="submit" :fn="searchWeatherFromMap"> Search </Button>
+        <Button :disabled="isMapBtnSearchDisabled" id="map-search" className="search-btn dm-sans-preset-5-medium" buttonType="submit" :fn="searchWeatherFromMap"> Search </Button>
     </fieldset>
 </template>
 
@@ -73,6 +73,7 @@
     justify-content: center;
     width: 100%;
     gap: 16px;
+    max-width: 1200px;
 }
 .search-btn {
     display: flex;
@@ -110,6 +111,7 @@
     width: 100%;
     border-radius: 10px;
     gap: 24px;
+    
 
     label {
         display: flex;
@@ -209,6 +211,12 @@
         .search-btn {
             flex: 1;
         }
+    }
+}
+
+@media(min-width: 900px) {
+    #map-search {
+        padding: 20px 15px;
     }
 }
 
