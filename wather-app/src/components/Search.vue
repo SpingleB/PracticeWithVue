@@ -95,6 +95,7 @@
     
     &:disabled {
         background-color: var(--color-netural-200);
+        cursor: default;
     }
 
     &:active {
