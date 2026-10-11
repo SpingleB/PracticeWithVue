@@ -85,6 +85,7 @@
     background-color: var(--color-blue-500);
     color: var(--color-netural-0);
     transition: var(--fast);
+    cursor: pointer;
 
     &:focus {
         outline: 2px solid var(--color-blue-500);
