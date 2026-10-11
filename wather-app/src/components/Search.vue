@@ -101,6 +101,10 @@
     &:active {
         transform: scale(0.98);
     }
+
+    &:disabled:active {
+        transform: scale(1);
+    }
 }
 
 .search-div {
